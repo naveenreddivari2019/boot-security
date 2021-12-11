@@ -1,4 +1,4 @@
-package com.javainuse.dao.impl;
+package com.sb.dao.impl;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,8 +16,8 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.stereotype.Repository;
 
-import com.javainuse.dao.EmployeeDao;
-import com.javainuse.model.Employee;
+import com.sb.dao.EmployeeDao;
+import com.sb.model.Employee;
 
 @Repository
 public class EmployeeDaoImpl extends JdbcDaoSupport implements EmployeeDao{

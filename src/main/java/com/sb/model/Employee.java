@@ -1,4 +1,4 @@
-package com.javainuse.model;
+package com.sb.model;
 
 public class Employee {
 

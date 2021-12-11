@@ -1,4 +1,4 @@
-package com.javainuse.controllers;
+package com.sb.controllers;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.javainuse.model.Employee;
-import com.javainuse.service.EmployeeService;
+import com.sb.model.Employee;
+import com.sb.service.EmployeeService;
 
 @Controller
 public class EmployeeController {

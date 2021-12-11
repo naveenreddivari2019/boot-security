@@ -1,8 +1,8 @@
-package com.javainuse.dao;
+package com.sb.dao;
 
 import java.util.List;
 
-import com.javainuse.model.Employee;
+import com.sb.model.Employee;
 
 public interface EmployeeDao {
 	void insertEmployee(Employee cus);
