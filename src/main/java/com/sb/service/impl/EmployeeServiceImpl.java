@@ -3,6 +3,7 @@ package com.sb.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.sb.dao.EmployeeDao;
@@ -10,6 +11,7 @@ import com.sb.model.Employee;
 import com.sb.service.EmployeeService;
 
 @Service
+@Profile({"dev","test"})
 public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired
