@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean id="beanLifeCycleImpl" class="com.springBeanLifeCycle.BeanLifeCycleImpl" init-method="init" destroy-method="destroyC"></bean>
+
+<bean id="studentbean" class="com.springCore.Student" scope="prototype" autowire="byName">
+    <property name="id" value="01"/>
+    <property name="name" value="Naveen" />
+    <!--<property name="address" ref="address"> </property>-->
+    <!--<ref bean="address"></ref>-->
+    <property name="course" >
+        <set>
+            <value>JAVA</value>
+            <value>ORACLE</value>
+            <value>PYTHON</value>
+        </set>
+    </property>
+<!--    <property name="kvm">
+        <map >
+            <entry key="A" value="Apple"></entry>
+            <entry key="B" value="BOY"></entry>
+            <entry key="B" value="BOY"></entry>
+        </map>
+    </property>-->
+
+</bean>
+
+<bean id="address" class="com.springCore.Address">
+    <property name="city" value="null"></property>
+</bean>
+
+</beans>
