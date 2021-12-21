@@ -1,0 +1,1 @@
+insert into student(id,age,name) values(2,35,"Kumar");
